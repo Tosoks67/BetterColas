@@ -36,12 +36,17 @@
         <Reference Include="0Harmony">
             <HintPath>$(SL_DEV_REFERENCES)\0Harmony.dll</HintPath>
         </Reference>
+        <Reference Include="UnityEngine">
+            <HintPath>$(SL_DEV_REFERENCES)\UnityEngine.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+            <HintPath>$(SL_DEV_REFERENCES)\UnityEngine.CoreModule.dll</HintPath>
+        </Reference>
     </ItemGroup>
 
     <!-- QoL moving the dll -->
     <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-        <Copy SourceFiles="$(TargetDir)Wylom.dll" DestinationFolder="$(LABAPI_GLOBAL_PLUGINS)" Condition="'$(LABAPI_GLOBAL_PLUGINS)' != ''"/>
-        <Copy SourceFiles="$(TargetDir)Wylom.dll" DestinationFolder="$(SL_DEV_REFERENCES)" Condition="'$(SL_DEV_REFERENCES)' != ''"/>
+        <Copy SourceFiles="$(TargetDir)BetterColas.dll" DestinationFolder="$(SL_DEV_REFERENCES)" Condition="'$(SL_DEV_REFERENCES)' != ''"/>
     </Target>
 
     <!-- ignore warnings about mismatch between versions of core libs
@@ -53,7 +58,6 @@
     <!-- nuget refs -->
     <ItemGroup>
         <PackageReference Include="ExMod.Exiled" Version="9.15.1"/>
-        <PackageReference Include="JetBrains.Annotations" Version="2026.2.0"/>
         <PackageReference Include="Northwood.LabAPI" Version="1.1.7"/>
         <PackageReference Include="PolySharp" Version="1.16.0">
             <PrivateAssets>all</PrivateAssets>
