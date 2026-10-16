@@ -5,7 +5,7 @@ using JetBrains.Annotations;
 namespace BetterColas;
 
 [UsedImplicitly]
-[HarmonyPatch(typeof(Scp207Stack), nameof(Scp207Stack.SpeedMultiplier))]
+[HarmonyPatch(typeof(Scp207Stack), nameof(Scp207Stack.SpeedMultiplier), MethodType.Getter)]
 public static class SpeedMultiplierPatch
 {
     // ReSharper disable once InconsistentNaming
