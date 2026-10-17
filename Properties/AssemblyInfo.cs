@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("BetterColas")]
-[assembly: AssemblyDescription("2x SCP-207 speed and 0.5x damage")]
+[assembly: AssemblyDescription("extra SCP-207 speed and 0.5x damage")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Tosoks67")]
 [assembly: AssemblyProduct("BetterColas")]

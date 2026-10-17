@@ -36,6 +36,9 @@
         <Reference Include="0Harmony">
             <HintPath>$(SL_DEV_REFERENCES)\0Harmony.dll</HintPath>
         </Reference>
+        <Reference Include="Assembly-CSharp-firstpass">
+            <HintPath>$(SL_DEV_REFERENCES)\Assembly-CSharp-firstpass.dll</HintPath>
+        </Reference>
         <Reference Include="UnityEngine">
             <HintPath>$(SL_DEV_REFERENCES)\UnityEngine.dll</HintPath>
         </Reference>
